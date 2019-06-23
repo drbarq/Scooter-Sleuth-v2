@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scooter Sleuth</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+
+         * {
+            margin: 0;
+            padding: 0; 
+            box-sizing: border-box;
+        }
+
+        .header-container {
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0);
+            /* display: flex;
+            justify-content: ; */
+            flex: 1;
+        }
+
+        .header {
+            width: 100%;
+            padding: 1rem;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* flex: 1; */
+        }
+        
+        .scooterButtons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex: 2;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 100%;
+            flex: 1;
+        }
+
+        .logo > img {
+            height: 100%;
+            /* padding: 8px; */
+        }
+
+        .map{
+            display: flex;
+            /* height: auto; */
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            /* align-items: center; */
+            /* flex-grow: inherit */ 
+            /* margin: auto; */
+        }
+
+        #map {
+            height: 600px;
+            width: 100%;
+            align-self: center;
+        }
+
+
+        .location {
+            width: 75px;
+            height: 75px;
+            background: url("https://vectr.com/drbarq/b5D7Geq6vs.svg?width=75&height=75&select=b5D7Geq6vspage0") no-repeat;
+            cursor: pointer;
+        }
+        .location:hover {    
+            background: url("https://vectr.com/drbarq/gGowPSNhf.svg?width=75&height=75&select=gGowPSNhfpage0") no-repeat;
+        }
+        .lyft {
+            width: 75px;
+            height: 75px;
+            background: url("https://vectr.com/drbarq/eogg1HaGi.svg?width=75&height=75&select=eogg1HaGipage0") no-repeat;
+            cursor: pointer;
+        }
+        .lyft:hover {
+            background: url("https://vectr.com/drbarq/ekUl8rlVg.svg?width=75&height=75&select=ekUl8rlVgpage0") no-repeat;
+        }  
+        /* .lyft:focus {
+            background: url("https://vectr.com/drbarq/bVP6XfjMs.svg?width=76&height=76&select=bVP6XfjMspage0") no-repeat;
+        } */
+        .bird {
+            width: 75px;
+            height: 75px;
+            background: url("https://vectr.com/drbarq/bTLNzZ8Al.svg?width=75&height=75&select=bTLNzZ8Alpage0") no-repeat;
+            cursor: pointer;
+        }
+        .bird:hover {
+            background: url("https://vectr.com/drbarq/d2llOG7KYw.svg?width=75&height=75&select=d2llOG7KYwpage0") no-repeat;
+        }  
+        .lime {
+            width: 75px;
+            height: 75px;
+            background: url("https://vectr.com/drbarq/dtxQ29bTH.svg?width=75&height=75&select=dtxQ29bTHpage0") no-repeat;
+            cursor: pointer;
+        }
+        .lime:hover {
+            background: url("https://vectr.com/drbarq/f2vfaUuWGJ.svg?width=75&height=75&select=f2vfaUuWGJpage0") no-repeat;
+        }  
+        .jump {
+            width: 75px;
+            height: 75px;
+            background: url("https://vectr.com/drbarq/b3QZw21gQd.svg?width=75&height=75&select=b3QZw21gQdpage0") no-repeat;
+            cursor: pointer;
+        }
+        .jump:hover {
+            background: url("https://vectr.com/drbarq/g3wfcWT83.svg?width=75&height=75&select=g3wfcWT83page0") no-repeat;
+        }  
+        .spin {
+            width: 75px;
+            height: 75px;
+            background: url("https://vectr.com/drbarq/l1ltTyqGLc.svg?width=75&height=75&select=l1ltTyqGLcpage0") no-repeat;
+            cursor: pointer;
+        }
+        .spin:hover {
+            background: url("https://vectr.com/drbarq/a4fdldnGEW.svg?width=75&height=75&select=a4fdldnGEWpage0") no-repeat;
+        }  
+
+        .footer {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .footer-item {
+        /* border: 1px solid #fff; */
+        background-color: #000000;
+        height: 100px;
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+
+        .footer-two {
+            flex:  2;
+            overflow-wrap: break-word;
+        }
+        .statusUpdate {
+            text-align: center;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+        }
+
+        .footer-one,
+        .footer-three {
+            background-color: rgb(0, 0, 0);
+            overflow-wrap: break-word;
+            flex: inital;
+            align-items: center;
+            width: 300px;
+        }
+        /* .footer-one > img {
+            width: 75%;
+            align-self: center; 
+        } */
+        /* .footer-three > img {
+            height: 75%;
+        } */
+        .github {
+            width: 75px;
+            height: 75px;
+            background: url("https://vectr.com/drbarq/e1rOx6MHX5.svg?width=75&height=75&select=e1rOx6MHX5page0") no-repeat;
+            cursor: pointer;
+        }
+        .github:hover {
+            background: url("https://vectr.com/drbarq/ahLUb3pWe.svg?width=75&height=75&select=ahLUb3pWepage0") no-repeat;
+        } 
+        .linkedin {
+            width: 75px;
+            height: 75px;
+            background: url("https://vectr.com/drbarq/c3m6WSXG7.svg?width=75&height=75&select=c3m6WSXG7page0") no-repeat;
+            cursor: pointer;
+        }   
+        .linkedin:hover {
+            background: url("https://vectr.com/drbarq/bvYv34Lc3.svg?width=75&height=75&select=bvYv34Lc3page0") no-repeat;
+        } 
+        .youtube {
+            width: 75px;
+            height: 75px;
+            background: url("https://vectr.com/drbarq/b2rZIv4I2.svg?width=75&height=75&select=b2rZIv4I2page0") no-repeat;
+            cursor: pointer;
+        }
+        .youtube:hover {
+            background: url("https://vectr.com/drbarq/d6FUeXaomm.svg?width=75&height=75&select=d6FUeXaommpage0") no-repeat;
+        } 
+        .contactInfo {
+            width: 175px; 
+            height: 85px;
+            background: url("https://vectr.com/drbarq/c365oFR7Cl.svg?width=335&height=145&select=c365oFR7Clpage0") no-repeat;
+            cursor: pointer;
+            background-size: contain;
+            /* align-self: center; */
+        }
+
+        .flatiron {
+            text-align: center;
+            color: #60B0F4;
+            font-family: 'Raleway', sans-serif;
+        }
+        .email {
+            text-align: center;
+            color: #60B0F4;
+            font-family: 'Raleway', sans-serif;
+        } 
+
+
+        @media(max-width:600px) {
+
+            .header {
+                align-items: baseline;
+            }
+
+            .scooterButtons > div {
+                width: 40px;
+                height: 40px;
+                background-size: cover;
+            }
+            .scooterButtons:hover > div {
+                width: 40px;
+                height: 40px;
+                background-size: cover;
+            }
+            .logo > img {
+                height: 60%;
+            }
+            .footer-three > div {
+                width: 35px;
+                height: 35px;
+                background-size: cover;
+            }
+            .footer-three:hover > div {
+                width: 35px;
+                height: 35px;
+                background-size: cover;
+            }
+            /* .footer-one > div {
+                width: 100px;
+                height: 28px;
+                background-size: cover;
+            } */
+            /* .footer-one:hover > div {
+                width: 100px;
+                height: 28px;
+                background-size: contain;
+            } */
+            .statusUpdate {
+                text-align: center;
+                color: white;
+                font-size: 12px;
+            }
+            .contactInfo {
+                height: 60%;
+            }
+        }
+
+
+      </style>
+</head>
+<body>
+
+        <div class='header-container'>
+            <div class='header'>
+                <div class='logo header-one'><img src='https://vectr.com/drbarq/a4FUNtVWm.svg?width=330&height=130&select=a4FUNtVWmpage0' alt=''></div>
+                    <!-- <div class ='location'></div> -->
+                    <div class = 'scooterButtons header-two'>
+                            <div class = 'lyft'></div>
+                            <div class = 'bird'></div>
+                            <div class = 'lime'></div>
+                            <div class = 'jump'></div>
+                            <div class = 'spin'></div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="map">
+            <div id="map"></div>
+        </div>
+
+        <div class='footer'>
+            <div class='footer-item footer-one'>
+                <div class = "contactInfo"></div>
+            </div>
+
+            <div class='footer-item footer-two'>
+                <h3 class = "statusUpdate"></h3>
+            </div>
+
+            <div class='footer-item footer-three'>
+                <div class = "github"></div>
+                <div class = "linkedin"></div>
+                <div class = "youtube"></div>
+            </div>
+
+        </div>
+
+
+        <script type='text/javascript' src='config.js'></script>
+        <script src="app.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/6.2.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>
