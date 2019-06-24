@@ -19,9 +19,11 @@ The logo buttons located at the top of the pag toggle the scooters on and off th
 
 The buttons tell the  🛴🕵🏻‍♂️ Scooter Sleuth 🛴🕵🏻‍♀️  which companies too sleuth.  
 
-![alt text](https://i.imgur.com/feuPOs0.gif)
+![alt text](https://i.imgur.com/sfcWd3R.gif)
 
 Then rendering those scooters on the map.
+
+![alt text](https://i.imgur.com/dEy6EmI.gifv)
 
 Enjoy!
 
