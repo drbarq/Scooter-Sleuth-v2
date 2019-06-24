@@ -11,6 +11,8 @@ Scooter Sleuth aggregates scooter share apps into one map rendered based on the 
 ## USAGE
 To find scooters close to you, first enable location services in your browser.  The browsers coordinates are sent to each scooter company in the form of an API request. 
 
+![](https://i.imgur.com/XpsAwdC.gifv)
+
 Use the logo buttons located at the top of the page to render and remove that companies This tells the  🛴🕵🏻‍♂️ Scooter Sleuth 🛴🕵🏻‍♀️  which companies too sleuth.  
 
 Once the location is verified it will be converted into GPS coordinates.  
