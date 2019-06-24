@@ -13,17 +13,17 @@ To find scooters close to you, first enable location services in your browser.  
 
 ![alt text](https://i.imgur.com/XpsAwdC.gif)
 
-Use the logo buttons located at the top of the page to render and remove that companies This tells the  🛴🕵🏻‍♂️ Scooter Sleuth 🛴🕵🏻‍♀️  which companies too sleuth.  
+The logo buttons located at the top of the pag toggle the scooters on and off the map.  
 
-Once the location is verified it will be converted into GPS coordinates.  
+![alt text](https://i.imgur.com/vBDHj88.gif)
 
-After receiving all of the available scooters are found we determine which scooters are closest by using the Haversine formula.
+The buttons tell the  🛴🕵🏻‍♂️ Scooter Sleuth 🛴🕵🏻‍♀️  which companies too sleuth.  
+
+![alt text](https://i.imgur.com/feuPOs0.gifv)
 
 Then rendering those scooters on the map.
 
-## VIDEO 
-
-Releasing Soon!
+Enjoy!
 
 ## CONTRIBUTING
 
