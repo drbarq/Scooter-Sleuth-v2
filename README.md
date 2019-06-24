@@ -23,7 +23,7 @@ The buttons tell the  🛴🕵🏻‍♂️ Scooter Sleuth 🛴🕵🏻‍♀️
 
 Then rendering those scooters on the map.
 
-![alt text](https://i.imgur.com/dEy6EmI.gifv)
+![alt text](https://i.imgur.com/dEy6EmI.gif)
 
 Enjoy!
 
